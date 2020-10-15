@@ -1,0 +1,7 @@
+{
+  "name": "hack2020",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
