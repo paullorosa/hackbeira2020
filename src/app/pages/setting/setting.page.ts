@@ -6,8 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./setting.page.scss'],
 })
 export class SettingPage implements OnInit {
+  numbers = [{
+    nome: "Paulo Rosa",
+    number: 842770000
+  }]
 
   constructor() { }
+
+  addNumber(n, m) {
+    this.numbers.push(
+      {
+        nome: n,
+        number: m
+      }
+    )
+
+  }
 
   ngOnInit() {
   }

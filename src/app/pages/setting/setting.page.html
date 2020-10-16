@@ -9,18 +9,20 @@
 
 <ion-content class="ion-padding">
   <br>
-  <ion-card-title mode="ios">Adicionar Telefones</ion-card-title>
+  <ion-card-title mode="ios">Lista de telefones</ion-card-title>
 
-  <ion-item>
+  <ion-item *ngFor="let n of numbers">
     <ion-label>
-      848282821
+      {{n.nome}}
     </ion-label>
+    {{n.number}}
     <ion-icon name="phone-portrait-sharp" slot="end"></ion-icon>
   </ion-item>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
+    <ion-fab-button (click)="addNumber('Araujo Rosa','821270963')">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
+
 </ion-content>
