@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>
       <strong>#HACK</strong>2020
     </ion-title>
@@ -7,7 +10,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card mode="ios">
+  <!-- <ion-card mode="ios">
     <img src="assets/img/bible.jpg" />
     <ion-card-header mode="ios">
 
@@ -17,5 +20,20 @@
     <ion-card-content mode="ios">
       Todas Quartas nos cultos das 18, com o pastor Presidente Edson Famanda
     </ion-card-content>
+  </ion-card> -->
+
+
+  <ion-card mode="ios" *ngFor="let i of message">
+    <img *ngIf="i.img" [src]="i.img" />
+    <ion-card-header mode="ios">
+
+      <ion-card-title mode="ios">{{i.titulo}}</ion-card-title>
+      <ion-card-subtitle mode="ios">{{i.dias}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content mode="ios">
+      {{i.mensagem}}
+    </ion-card-content>
   </ion-card>
+
+
 </ion-content>
