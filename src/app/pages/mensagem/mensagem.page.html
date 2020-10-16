@@ -21,20 +21,27 @@
     <ion-input></ion-input>
   </ion-item>
 
-  <ion-item>
-    <ion-label>Inicio</ion-label>
-    <ion-datetime mode="ios" displayFormat="DD MMM YYYY" placeholder="Selecionar Data" cancelText="Cancelar"
-      doneText="Concluir"
-      monthShortNames="Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro,  Outubro,  Novembro,  Dezembro">
-    </ion-datetime>
-  </ion-item>
-  <ion-item>
-    <ion-label>Fim</ion-label>
-    <ion-datetime mode="ios" displayFormat="DD MMM YYYY" placeholder="Selecionar Data" cancelText="Cancelar"
-      doneText="Concluir"
-      monthShortNames="Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro,  Outubro,  Novembro,  Dezembro">
-    </ion-datetime>
-  </ion-item>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-label>Inicio</ion-label>
+        <ion-datetime mode="ios" displayFormat="DD MMM YYYY" cancelText="Cancelar" doneText="Concluir"
+          monthShortNames="Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro,  Outubro,  Novembro,  Dezembro">
+        </ion-datetime>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item>
+        <ion-label>Fim</ion-label>
+        <ion-datetime mode="ios" displayFormat="DD MMM YYYY" cancelText="Cancelar" doneText="Concluir"
+          monthShortNames="Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro,  Outubro,  Novembro,  Dezembro">
+        </ion-datetime>
+      </ion-item>
+    </ion-col>
+
+  </ion-row>
+
+
 
   <ion-item>
     <ion-label position="floating">Description</ion-label>
