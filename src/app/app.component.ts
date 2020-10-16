@@ -21,6 +21,11 @@ export class AppComponent implements OnInit {
       title: 'Criar',
       url: 'mensagem',
       icon: 'paper-plane'
+    },
+    {
+      title: 'Config',
+      url: 'setting',
+      icon: 'settings'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];

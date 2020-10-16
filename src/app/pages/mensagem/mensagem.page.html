@@ -1,9 +1,47 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>mensagem</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-icon name="add-circle"></ion-icon> Criar Evento
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
 
+  <ion-item>
+    <ion-label position="floating">Título</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">URL da imagem</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Inicio</ion-label>
+    <ion-datetime mode="ios" displayFormat="DD MMM YYYY" placeholder="Selecionar Data" cancelText="Cancelar"
+      doneText="Concluir"
+      monthShortNames="Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro,  Outubro,  Novembro,  Dezembro">
+    </ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Fim</ion-label>
+    <ion-datetime mode="ios" displayFormat="DD MMM YYYY" placeholder="Selecionar Data"
+      monthShortNames="Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro,  Outubro,  Novembro,  Dezembro">
+    </ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Description</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+  <ion-button>
+    Enviar
+    <ion-icon slot="end" name="paper-plane"></ion-icon>
+  </ion-button>
 </ion-content>
